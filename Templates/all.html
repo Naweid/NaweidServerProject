@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "allbase.html" %}
+
+{% block head %}
+<title>All | People </title>
+{% endblock %}
+
+{% block body %}
+{% for data in datalist: %}
+{% set greeting = data["greeting"] %}
+{% set embed = data["embed"] %}
+
+<h1>{{greeting}} <span style='color:lightpink;'></span></h1>
+<ol>
+    {% if 'embed' in data %}
+    <li>{{job}} link: <span style='color:midnightblue;'>{{embed}}</span></li>
+    <div class="embed-responsive embed-responsive-4by3">
+        <iframe class="embed-responsive-item" src={{embed}}></iframe>
+    </div>
+    {% endif %}
+</ol>
+
+{% endfor %}
+{% endblock %}
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block head %}
+<title>{{name}} | Barcelona </title>
+<head>
+    <style>
+ #myBG {
+    background-image: url('//img2.storyblok.com/1366x400/smart/filters:format(jpeg)/f/53624/4096x1260/149c4145e5/germany_4096x1260.png');
+    background-size: 100% 300px;
+ }
+ #Hotel {
+     background-image: url('https://cache.marriott.com/marriottassets/marriott/BCNWH/bcnwh-view-8744-hor-feat.jpg');
+     text-align:center;
+     width: 385px;
+     height: 216.3147px;
+     background-size: 385px 216.3147px;
+     color: white;
+     text-shadow: 2px 2px black;
+ }
+ #Restaurant {
+     background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/12/3d/c8/73/photo3jpg.jpg');
+     text-align:center;
+     width: 385px;
+     height: 288.5px;
+     background-size: 385px 288.5px;
+     color: white;
+     text-shadow: 2px 2px black;
+ }
+ .box {
+     background-image: url('https://www.kovifabrics.com/img/thumbs/de9dd38b70e615ef91c5677d7104e0c1.JPG');
+     color: black;
+     border: 5px solid green;
+     padding: 40px;
+ }
+</style>
+</head>
+{% endblock %}
+
+<!-- Project  Information  -->
+{% block title %}
+<div id="myBG">
+    <h1>Barcelona, Spain</h1>
+    <pre style="color:white; font-size:18px;">Barcelona is one of Spain's most popular tourist attractions.
+        The unique historical significance the city leaves behinds attracts
+        people from all over the world!
+    </pre>
+    <pre style="color:white;">Naweid Hassanzadeh
+    </pre>
+</div>
+{% endblock %}
+
+{% block hotspot1 %}
+<div>
+    <h2>Hot spots</h2>
+    <hr>
+    <h3>La Sagrada Familia</h3>
+    <img src="https://media.architecturaldigest.com/photos/5cfea4b0c9f2f22721f26766/2:1/w_5160,h_2580,c_limit/GettyImages-740527937.jpg" alt="La Sagrada Familia" style="width:300px;height:200px;">
+    <pre style="color:DarkSlateGrey;">
+    The La Sagrada Familia is
+    a very popular tourist attraction
+    in Barcelona. The church was never
+    completed, but serves as a
+    historical monument towards
+    to the many people who live
+    in spain. Following the
+    Gothic Style, this building
+    was built in dedication
+    to the Sagrada Familia.
+    </pre>
+    <hr>
+    <h3>La Rambla</h3>
+    <img src="https://barcelonando.com/wp-content/uploads/sites/3/2018/07/las-ramblas-2.jpeg" alt="Berlin Wall" style="width:300px;height:224px;">
+    <pre style="color:DarkSlateGrey;">
+    La Rambla is arguable one
+    of the most famous streets
+    in Barcelona. The street is
+    filled with stores, restaurants,
+    and other attractions. It brings
+    you to the heart of Barcelona.
+    One famous aspect that about
+    La Rambla is that it has
+    trees lined all the way down
+    the street.
+    </pre>
+    <hr>
+    <h3>Park Guell</h3>
+    <img src="https://cdn.getyourguide.com/img/location/53bffbaa37e37-m1398846174.jpg/148.jpg" alt="Park Guell" style="width:300px;height:450px;">
+    <pre style="color:DarkSlateGrey;">
+   Park Guell is a famous park
+   that is a very popular tourist
+   attraction. It is filled with
+   many sightings that will keep
+   viewers entertained and happy.
+   It is composed with unique
+   architectural elements and
+   a variety of plants for its
+   gardens. It was orignally planned
+   as a housing system, but opened as
+   a public park in 1926.
+    </pre>
+</div>
+{% endblock %}
+
+{% block hotspot2 %}
+<div class="box">
+    <h3>Top Hotels</h3>
+    <hr>
+    <div id="Hotel">
+        <h2>W Barcelona<br>Hof</h2>
+        <a href="https://www.marriott.com/hotels/hotel-information/bcnwh-w-barcelona/" style="color: white;">https://www.marriott.com/hotels/hotel-information/bcnwh-w-barcelona/</a>
+    </div>
+    <pre style="color:DarkSlateGrey; font-size:75%; overflow-x: hidden; max-width: 100%; background-color: burlywood; border: 5px darkgoldenrod;">
+"Step inside. See for yourself.
+Designed by world-renowned
+architect Ricardo Bofill,
+W Barcelona sets the scene
+for a spectacular stay.
+Located on the beachfront
+along the famous Barceloneta
+boardwalk. Check into one
+of our 473 fabulous
+guestrooms & suites boasting
+panoramic views over
+the Mediterranean and city of Barcelona.
+Relax and enjoy innovative
+Burgers & Cocktails at SALT
+Restaurant, right on the beach.
+Get glamorous on our 26th-floor
+hotspot, at ECLIPSE rooftop bar,
+or make your way down to our
+signature Living Room to find
+WAVE & the W LOUNGE for a
+cocktail (or two)."
+        </pre>
+</div>
+
+<div class="box">
+    <h3>Top Restaurants</h3>
+    <hr>
+    <div id="Restaurant">
+        <h2>Restaurant<br>Maitea Taberna</h2>
+        <a href="https://www.maitea.es/en/" style="color: white;">https://www.maitea.es/en/</a>
+    </div>
+    <pre style="color:DarkSlateGrey; font-size:75%; overflow-x: hidden; max-width: 100%; background-color: burlywood; border: 5px darkgoldenrod;">
+"Our mother Maite was the
+one who taught us to love
+gastronomy. She was born
+in San Sebastián
+and moved to Barcelona
+when young. She took care
+to make us feel a special
+bond with her land. Our
+kitchen follows her steps
+and we try to make it simple
+and honest. We are a casual
+tavern where we hope you can
+enjoy both our pintxos and
+our dishes and dishes. We
+have a long bar and a dining
+area with tables."
+        </pre>
+</div>
+{% endblock %}
+
+{% block hotspot3 %}
+
+{% endblock %}
